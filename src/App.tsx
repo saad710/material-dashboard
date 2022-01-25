@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import { Grid } from '@mui/material';
 import LeftBar from './components/LeftBar/LeftBar';
 import Feed from './components/Feed/Feed';
+import RightContent from './components/RightContent/RightContent';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
         </Grid>
         <Grid item sm={7} xs={10}>
           <Feed />
+        </Grid>
+        <Grid item sm={3} >
+          <RightContent />
         </Grid>
       </Grid>
     </div>

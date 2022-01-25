@@ -44,8 +44,7 @@ export default function RecipeReviewCard(props: TitleProps) {
     };
 
     return (
-        <Container>
-            <Card sx={{ maxWidth: 945, marginBottom: 5 }}>
+            <Card sx={{ maxWidth: 1045, marginBottom: 5 ,backgroundColor:"rgb(5, 30, 52)",color:'#fff',fontWeight:600}}>
                 <CardHeader
                     avatar={
                         <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -53,7 +52,7 @@ export default function RecipeReviewCard(props: TitleProps) {
                         </Avatar>
                     }
                     action={
-                        <IconButton aria-label="settings">
+                        <IconButton aria-label="settings" sx={{color:'#fff'}}>
                             <MoreVertIcon />
                         </IconButton>
                     }
@@ -67,17 +66,17 @@ export default function RecipeReviewCard(props: TitleProps) {
                     alt="Paella dish"
                 />
                 <CardContent>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="#fff">
                         This impressive paella is a perfect party dish and a fun meal to cook
                         together with your guests. Add 1 cup of frozen peas along with the mussels,
                         if you like.
                     </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                    <IconButton aria-label="add to favorites">
+                    <IconButton aria-label="add to favorites" sx={{color:'#fff'}}>
                         <FavoriteIcon />
                     </IconButton>
-                    <IconButton aria-label="share">
+                    <IconButton aria-label="share" sx={{color:'#fff'}}>
                         <ShareIcon />
                     </IconButton>
                     <ExpandMore
@@ -85,6 +84,7 @@ export default function RecipeReviewCard(props: TitleProps) {
                         onClick={handleExpandClick}
                         aria-expanded={expanded}
                         aria-label="show more"
+                        sx={{color:'#fff'}}
                     >
                         <ExpandMoreIcon />
                     </ExpandMore>
@@ -119,6 +119,5 @@ export default function RecipeReviewCard(props: TitleProps) {
                     </CardContent>
                 </Collapse>
             </Card>
-        </Container>
     );
 }

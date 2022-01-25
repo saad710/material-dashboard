@@ -94,7 +94,7 @@ export default function CustomizedList() {
                     lineHeight: '20px',
                     mb: '2px',
                   }}
-                  secondary=" Storage, Hosting, Functions, and Machine Learning"
+                  secondary="Authentication, Database, Storage, Hosting, Functions, and Machine Learning"
                   secondaryTypographyProps={{
                     noWrap: true,
                     fontSize: 12,
