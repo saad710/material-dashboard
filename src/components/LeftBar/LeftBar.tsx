@@ -51,7 +51,7 @@ const FireNav = styled(List)<{ component?: React.ElementType }>({
 export default function CustomizedList() {
   const [open, setOpen] = React.useState(true);
   return (
-    <Box sx={{ display: 'flex'}}>
+    <Box sx={{ display: 'flex',paddingTop:7}}>
       <ThemeProvider
         theme={createTheme({
           components: {
